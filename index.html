@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>SPACEX dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet" />
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />	
+	</head>
+	<body>
+	  	<header class="grid-item header">
+				<img src="images/logo.png" id="logo"> 
+	  	</header>
+
+	    <main class="grid-item ad1">
+	    	<h2>Brandstof verbruik van deze week</h2>
+	    	<canvas id="myChart"></canvas>
+
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+			<script src="scripts/chart1.js"></script>
+
+	    </main>
+	    <aside class="grid-item ad2">
+	    	<h2>Hoeveelheid water aan boord</h2>
+	    	<canvas id="myChart2"></canvas>
+
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+			<script src="scripts/chart2.js"></script>
+
+
+	    </aside>
+	    <aside class="grid-item ad3">
+	    	<h2>Hoeveel groente is er aanwezig?</h2>
+	    	<canvas id="myChart3"></canvas>
+
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+			<script src="scripts/chart3.js"></script>
+
+		    <br />
+	    </aside>
+	  <script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>

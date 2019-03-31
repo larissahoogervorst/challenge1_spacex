@@ -1,0 +1,127 @@
+a {
+  text-decoration: none;
+}
+
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+        "title title"
+        "main  main"
+        "ad1   ad1"
+        "ad2   ad2"
+        "ad3   ad3"; 
+}
+
+.header{
+  grid-area: title;
+} 
+
+.main{
+  grid-area: main;
+}
+
+.ad1 {
+  grid-area: ad1;
+}
+
+.ad2 {
+  grid-area: ad2;
+}
+
+.ad3 {
+  grid-area: ad3;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+
+#logo{
+  width: 40%;
+}
+
+@media only screen and (min-width: 700px){
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-areas: 
+        "title title title"
+        "ad1   ad1   ad1"
+        "ad2   ad3   ad3"; 
+}
+
+.header{
+  grid-area: title;
+} 
+
+.main{
+  grid-area: main;
+}
+
+.ad1 {
+  grid-area: ad1;
+}
+.ad2 {
+  grid-area: ad2;
+}
+
+.ad3 {
+  grid-area: ad3;
+}
+
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+#logo{
+  width: 40%;
+}
+
+@media only screen and (min-width: 1024px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 5px;
+    grid-template-areas: 
+          "title title  title"
+          "main  main   main"
+          "ad1   ad2    ad3"; 
+  }
+
+  .header{
+    grid-area: title;
+  }
+
+  .main{
+    grid-area: main;
+  }
+
+  .ad1{
+    grid-area: ad1;
+  }
+
+  .ad2{
+    grid-area: ad2;
+  }
+
+  .ad3{
+    grid-area: ad3;
+  }
+
+  #logo{
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+}
